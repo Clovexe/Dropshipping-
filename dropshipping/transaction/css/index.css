@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Poppins:wght@300&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+
+.parent{
+	height: 83vh;
+	width: 100%;
+	display: flex;
+	background: #555555;
+
+}
+
+.users{
+	width: 30%;
+	background: #F3f0e8;
+	overflow-y: scroll;
+}
+.users h1, .users p, .product h1{
+	margin-top: 10px;
+	font-family: 'Montserrat', sans-serif;
+}
+.product h1{
+	color: white;	
+}
+.product{
+	width: 70%;
+	border: 2px solid blue;
+
+}
+.content{
+	padding: 10px;
+}
+.search{
+	width: 75%;
+	height: 30px;
+	padding: 5px;
+}
+.search_btn{
+	width: 18%;
+	height: 40px;
+}
+#suggestion{
+	background: #555555;
+	color: white;
+}
+#user_suggestion{
+	background: white;
+	color: #555555;
+}
+#suggestion, #user_suggestion{
+	position: absolute;
+	font-family: 'Montserrat', sans-serif;
+}
+#suggestion .items, #user_suggestion .items{
+	padding: 10px;
+}
+#suggestion .items:hover{
+	background: white;
+	color: #555555;
+	cursor: pointer;
+}
+#user_suggestion .items:hover{
+	color: white;
+	background: #555555;
+	cursor: pointer;
+}
+#userlist{
+	background: transparent;
+	width: 100%;
+	padding: 10px;
+}
+#userlist .user_detail{
+	font-family: 'Nunito', sans-serif;
+	background: white;
+	padding: 15px;
+	border-radius: 20px;
+	box-shadow: 0px 5px 5px 0 rgba(0, 0, 0, 0.2),
+    0px 5px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+#userlist .user_detail{
+	width: 80%;
+	margin: 0 auto;
+}
+
+#userlist hr{
+	border-color: black;
+	border-width: 1px;
+}
+#userlist button,#productlist .product_detail button{
+	float: right;
+	border: none;
+	background: #555555;
+	color: white;
+	padding: 5px;
+	width: 25px;
+	border-radius: 20px;
+	text-align: center;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#userlist button:hover, #userlist .user_detail:hover{
+	transform: scale(1.1);
+	z-index: 2;
+	transition: .8s;
+	cursor: pointer;
+}
+
+#productlist{
+	font-family: 'Poppins', sans-serif;
+	background: #555555;
+	
+	width: 100%;
+	overflow-y: scroll;
+	height: 65vh;
+	
+}
+#productlist .product_detail{
+	background: white;
+	padding: 10px;
+	display: flex;
+	font-size: 30px;
+	width: 95%;
+	height: 75%;
+}
+
+
+#productlist .product_detail .img_container{
+	width: 40%;
+}
+#productlist .product_detail .info_container{
+	width: 60%;
+}
+#productlist .product_detail .img_container img{
+	width: 100%;
+	height: 100%;
+}
